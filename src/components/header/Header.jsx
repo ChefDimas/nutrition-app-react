@@ -1,9 +1,11 @@
 import React from "react";
-import { NavLink, Routes, Route, Link } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import logo from "../../assets/logos/logo.png";
 import style from './header.module.sass'
+import './header.module.css'
 
 const Header = () => {
+    let activeLink = 'active'
 
     return (
         <header className={style.header}>
@@ -12,11 +14,60 @@ const Header = () => {
             </a>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><a href="/bmi-calc">BMI Calc</a></li>
-                    <li><a href="/">Item3</a></li>
-                    <li><a href="/">Item4</a></li>
-                    <li><a href="/">Item5</a></li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            style={({isActive}) =>
+                                (isActive ? {fontWeight: '700', textDecoration: 'underline'} :
+                                    {fontWeight: '400'})}
+                        >Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/bmi-calc"
+                            style={({isActive}) =>
+                                (isActive ? {fontWeight: '700', textDecoration: 'underline'} :
+                                    {fontWeight: '400'})}
+                        >BMI Calc
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            style={({isActive}) =>
+                                (isActive ? {fontWeight: '700', textDecoration: 'underline'} :
+                                    {fontWeight: '400'})}
+                        >Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            style={({isActive}) =>
+                                (isActive ? {fontWeight: '700', textDecoration: 'underline'} :
+                                    {fontWeight: '400'})}
+                        >Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            style={({isActive}) =>
+                                (isActive ? {fontWeight: '700', textDecoration: 'underline'} :
+                                    {fontWeight: '400'})}
+                        >Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            style={({isActive}) =>
+                                (isActive ? {fontWeight: '700', textDecoration: 'underline'} :
+                                    {fontWeight: '400'})}
+                        >Home
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
