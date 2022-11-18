@@ -10,7 +10,7 @@ const Header = () => {
             </a>
             <nav>
                 <ul>
-                    <li><a href="/">Item <br/> Information</a></li>
+                    <li><a href="/">BMI Calc</a></li>
                     <li><a href="/">Kcal <br/> Calculator</a></li>
                     <li><a href="/">Item3</a></li>
                     <li><a href="/">Item4</a></li>
