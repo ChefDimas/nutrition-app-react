@@ -1,8 +1,10 @@
+import GeneralLayout from "./layouts/GeneralLayout";
 
 function App() {
   return (
-    <div>
-    </div>
+    <GeneralLayout>
+      a
+    </GeneralLayout>
   );
 }
 
