@@ -1,0 +1,41 @@
+@import "../../style/variables"
+
+.header
+    position: sticky
+    box-sizing: border-box
+    height: auto
+    width: 100%
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem
+    background-color: $brown-dark
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    img
+        width: 4rem
+        height: 3rem
+
+        &:hover
+            scale: 1.1
+            transition: all .2s ease-in-out
+    nav
+        width: 60%
+
+        ul
+            text-decoration: none
+            list-style: none
+            display: flex
+            padding: 0
+            margin: 0
+            justify-content: space-between
+            align-items: center
+
+            li
+                text-align: center
+
+                a
+                    color: $green-light
+                    text-decoration: none
+                    &:hover
+                        font-size: 1.1rem
+                        transition: all .2s ease-in-out

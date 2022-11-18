@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
         <footer className={style.footer}>
-            {!isClosed && (<div>
+            {!isClosed && (<div className={style.popup}>
                 <span>All rights reserved {date}</span>
                 <button onClick={() => setIsClosed(!isClosed)}>
                     <GrFormClose size={20}/>
