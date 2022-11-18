@@ -5,7 +5,6 @@ import style from './header.module.sass'
 import './header.module.css'
 
 const Header = () => {
-    let activeLink = 'active'
 
     return (
         <header className={style.header}>
