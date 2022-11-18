@@ -1,8 +1,10 @@
 import React from "react";
+import { NavLink, Routes, Route, Link } from "react-router-dom";
 import logo from "../../assets/logos/logo.png";
 import style from './header.module.sass'
 
 const Header = () => {
+
     return (
         <header className={style.header}>
             <a href="/">
@@ -10,8 +12,8 @@ const Header = () => {
             </a>
             <nav>
                 <ul>
-                    <li><a href="/">BMI Calc</a></li>
-                    <li><a href="/">Kcal <br/> Calculator</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><a href="/bmi-calc">BMI Calc</a></li>
                     <li><a href="/">Item3</a></li>
                     <li><a href="/">Item4</a></li>
                     <li><a href="/">Item5</a></li>
